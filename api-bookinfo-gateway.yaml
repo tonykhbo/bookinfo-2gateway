@@ -1,0 +1,15 @@
+kind: Gateway
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: api-gateway
+  namespace: bookinfo
+spec:
+  servers:
+    - hosts:
+        - api-bookinfo.apps.cluster-6ktdz.6ktdz.sandbox1110.opentlc.com
+      port:
+        name: http
+        number: 80
+        protocol: HTTP
+  selector:
+    istio: ingressgateway
