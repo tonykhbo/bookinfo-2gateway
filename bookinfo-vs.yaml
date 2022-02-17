@@ -5,7 +5,7 @@ metadata:
   namespace: bookinfo
 spec:
   hosts:
-    - '*'
+    - 'frontend-bookinfo.apps.cluster-6ktdz.6ktdz.sandbox1110.opentlc.com'
   gateways:
     - bookinfo-gateway
   http:

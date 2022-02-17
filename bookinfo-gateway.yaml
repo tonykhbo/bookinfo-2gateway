@@ -6,7 +6,7 @@ metadata:
 spec:
   servers:
     - hosts:
-        - '*'
+        - 'frontend-bookinfo.apps.cluster-6ktdz.6ktdz.sandbox1110.opentlc.com'
       port:
         name: http
         number: 80
